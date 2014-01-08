@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: Favorites', function () {
+/*describe('Service: Favorites', function () {
 
   // load the service's module
   beforeEach(module('crowdNewsApp.services'));
@@ -16,3 +16,4 @@ describe('Service: Favorites', function () {
   });
 
 });
+*/

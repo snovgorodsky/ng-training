@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: Settings', function () {
+/*describe('Service: Settings', function () {
 
   // load the service's module
   beforeEach(module('crowdNewsApp.services'));
@@ -20,4 +20,4 @@ describe('Service: Settings', function () {
     expect(Settings.getSubreddit()).toEqual('cars');
   });
 
-});
+});*/

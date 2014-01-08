@@ -6,7 +6,7 @@
 		<h3 class="story-title">
 			<a href="{{ ngModel.data.url }}">{{ ngModel.data.title }}</a><br />
 		</h3>
-		<div class="comment-count">{{ ngModel.data.author }} | {{ ngModel.data.num_comments }} Comments</div>
+		<div class="comment-count">{{ ngModel.data.author }} | {{ ngModel.data.num_comments }} Comments | <time data-created="{{ ngModel.data.created }}">{{ ngModel.data.created * 1000 | date:'MM/dd/yyyy @ h:mma'}}</time></div>
 		<div class="btn-toolbar" role="toolbar">
 			<div class="btn-group btn-group-xs">
 	          <button type="button" class="btn btn-default" ng-click="onFavorite(ngModel)">Favourite</button>

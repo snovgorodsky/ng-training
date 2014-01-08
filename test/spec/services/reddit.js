@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Service: reddit', function () {
+/*describe('Service: reddit', function () {
 
   // load the service's module
   beforeEach(module('crowdNewsApp.services'));
@@ -16,3 +16,4 @@ describe('Service: reddit', function () {
   });
 
 });
+*/

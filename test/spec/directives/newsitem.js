@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: newsItem', function () {
+/*describe('Directive: newsItem', function () {
 
   // load the directive's module
   beforeEach(module('crowdNewsApp'));
@@ -22,3 +22,4 @@ describe('Directive: newsItem', function () {
     expect(element.text()).toBe('');
   }));
 });
+*/
