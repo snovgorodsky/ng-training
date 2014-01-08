@@ -1,0 +1,11 @@
+<h2>Settings</h2>
+
+<form ng-submit="saveSettings()">
+	<div class="form-group">
+		<label for="subreddit-url">SubReddit:</label>
+		<input type="text" id="subreddit-url" class="form-control" ng-model="subreddit" placeholder="Subreddit to Fetch">
+	</div>
+	<input type="submit" class="btn btn-info" value="Save">
+</form>
+
+<pre>{{ subreddit }}</pre>

@@ -1,0 +1,32 @@
+
+<div ng-controller="MainController">
+	<div class="col-md-12 jumbotron">
+		<span class="error-message" ng-bind="error">{{ error }}</span>
+
+		<div class="search">
+			<input type="text" class="form-control" placeholder="Search" ng-model="search.title">
+		</div>
+
+		<h4>Sort by</h4>
+		<div class="ordering btn-group">
+			<button type="button" class="btn btn-primary" ng-click="reorderNews('data.num_comments')">Popular</button>
+			<button type="button" class="btn btn-info" ng-click="reorderNews('data.created')">Newest</button>
+			<button type="button" class="btn btn-primary" ng-click="reorderNews('data.author')">Author</button>
+		</div>
+	</div>
+
+	<div class="col-md-8 news-stories">
+		<h3>Latest from {{ subreddit }}</h3>
+		<article class="story-snippet" ng-repeat="i in news | orderBy:term:reverseNews | filter:search.title">
+			<div news-item clicked-favorite="addToFavorites(news)" ng-model="i"></div>
+		</article>
+	</div>
+</div>
+
+<div class="col-md-4" ng-controller="FavoritesController">
+	<h3>My Favourites</h3>
+	<div ng-repeat="i in faves track by $id(i)">
+		<h4>{{ i.data.title }}</h4>
+		<a ng-click="removeFromFavorites(i)">x</a>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<div>
+	<div class="col-4">
+		<img class="item-thumbnail" ng-src="{{ ngModel.data.thumbnail }}" title="{{ ngModel.data.title }}">
+	</div>
+	<div class="col-8">
+		<h3 class="story-title">
+			<a href="{{ ngModel.data.url }}">{{ ngModel.data.title }}</a><br />
+		</h3>
+		<div class="comment-count">{{ ngModel.data.author }} | {{ ngModel.data.num_comments }} Comments</div>
+		<div class="btn-toolbar" role="toolbar">
+			<div class="btn-group btn-group-xs">
+	          <button type="button" class="btn btn-default" ng-click="onFavorite(ngModel)">Favourite</button>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
